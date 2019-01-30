@@ -6,11 +6,11 @@ export const initializeFirebase = () => {
   });
 }
 
-/*navigator.serviceWorker
-    .register('/my-sw.js')
+navigator.serviceWorker
+    .register('/serviceWorker.js')
     .then((registration) => {
       firebase.messaging().useServiceWorker(registration);
-});*/
+});
 
 export const askForPermissioToReceiveNotifications = async () => {
   try {
