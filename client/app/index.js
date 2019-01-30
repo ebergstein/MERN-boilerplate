@@ -1,5 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
+import { initializeFirebase } from './push-notification';
+import * as serviceWorker from './serviceWorker';
 
 import {
   BrowserRouter as Router,
@@ -28,3 +30,5 @@ render((
     </App>
   </Router>
 ), document.getElementById('app'));
+initializeFirebase();
+serviceWorker.unregister();

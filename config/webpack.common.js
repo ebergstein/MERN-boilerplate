@@ -11,6 +11,7 @@ const isProd = NODE_ENV === 'production';
 
 module.exports = {
   entry: {
+    polyfill: 'babel-polyfill',
     'app': [
       helpers.root('client/app/index.js')
     ]

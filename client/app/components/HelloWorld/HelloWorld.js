@@ -1,7 +1,13 @@
 import React from 'react';
+import { askForPermissioToReceiveNotifications } from '../../push-notification';
 
 const HelloWorld = () => (
-  <p>Hello World</p>
+  <div>
+    <button onClick={askForPermissioToReceiveNotifications} >
+      Click Here
+   	</button>
+   	<p>Hello World</p>
+  </div>
 );
 
 export default HelloWorld;
